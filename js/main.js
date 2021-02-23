@@ -13,9 +13,8 @@ window.addEventListener('load', ()=> {
         navigator.geolocation.getCurrentPosition(position => {
         long = position.coords.longitude;
         lat = position.coords.latitude;
-
-        const proxy = 'https://cors.bridged.cc';
-        const api = `${proxy}https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=80de077a204b3f1c959c8931a0a03ca2`;
+        
+        const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=80de077a204b3f1c959c8931a0a03ca2`;
 
         fetch(api)
         //after u get info, it runs
